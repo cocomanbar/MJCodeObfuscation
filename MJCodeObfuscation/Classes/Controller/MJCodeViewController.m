@@ -12,15 +12,16 @@
 #import "NSString+Extension.h"
 
 @interface MJCodeViewController()
-@property (weak) IBOutlet NSButton *openBtn;
-@property (weak) IBOutlet NSButton *chooseBtn;
-@property (weak) IBOutlet NSButton *startBtn;
+@property (weak) IBOutlet NSButton *openBtn;        //打开
+@property (weak) IBOutlet NSButton *chooseBtn;      //选择
+@property (weak) IBOutlet NSButton *startBtn;       //开始
 @property (weak) IBOutlet NSTextField *filepathLabel;
 @property (copy) NSString *filepath;
 @property (copy) NSString *destFilepath;
 @property (weak) IBOutlet NSTextField *destFilepathLabel;
 @property (weak) IBOutlet NSTextField *tipLabel;
 @property (weak) IBOutlet NSTextField *prefixFiled;
+@property (nonatomic) BOOL isDEBUG;
 @end
 
 @implementation MJCodeViewController
@@ -28,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.isDEBUG = YES;
     self.tipLabel.stringValue = @"";
     self.filepathLabel.stringValue = @"";
     self.destFilepathLabel.stringValue = @"";
@@ -68,6 +70,11 @@
     [[NSWorkspace sharedWorkspace] activateFileViewerSelectingURLs:fileURLs];
 }
 
+- (IBAction)chooseDebug:(NSButton *)sender {
+    NSButton *button = (NSButton *)sender;
+    self.isDEBUG = button.state;
+}
+
 - (IBAction)start:(NSButton *)sender {
     self.destFilepath = nil;
     self.destFilepathLabel.stringValue = @"";
@@ -89,7 +96,11 @@
     void (^completion)(NSString *) = ^(NSString *fileContent) {
         // 保存
         self.destFilepath = [self.filepath stringByAppendingPathComponent:@"MJCodeObfuscation.h"];
-        self.destFilepath = [NSFileManager mj_checkPathExists:self.destFilepath];
+        if ([NSFileManager mj_pathExists:self.destFilepath]) {
+            [NSFileManager mj_deletePathExists:self.destFilepath];
+        }
+        self.destFilepath = [NSFileManager mj_addPathExists:self.destFilepath];
+        fileContent = [NSString mj_returnFileContent:fileContent isDebug:self.isDEBUG];
         [fileContent writeToFile:self.destFilepath atomically:YES
                         encoding:NSUTF8StringEncoding error:nil];
         

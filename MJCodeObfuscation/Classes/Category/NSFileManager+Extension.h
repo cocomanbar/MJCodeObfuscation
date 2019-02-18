@@ -28,4 +28,14 @@
 /** 检查某个路径是否存在，如果存在，就生成新的路径名，直到不存在为止 */
 + (NSString *)mj_checkPathExists:(NSString *)path;
 
+///////////////////////
+/** 检查某个路径是否存在 */
++ (BOOL)mj_pathExists:(NSString *)path;
+
+/** 检查删除指定路径文件 */
++ (BOOL)mj_deletePathExists:(NSString *)path;
+
+/** 新增路径文件 */
++ (NSString *)mj_addPathExists:(NSString *)path;
+
 @end

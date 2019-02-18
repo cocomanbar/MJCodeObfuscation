@@ -66,4 +66,43 @@
     crc = crc32(crc, data.bytes, (uInt)data.length);
     return [NSString stringWithFormat:@"%lu", crc];
 }
+
+
+/** 返回指定文件信息 */
++ (NSString *)mj_returnFileContent:(NSString *)fileContent isDebug:(BOOL)debug{
+    
+    /*
+     #ifndef MJCodeObfuscation_h
+     #define MJCodeObfuscation_h
+     #ifdef DEBUG
+     #else
+     #define test_runAge VtDIBLvYSpOHozkQ
+     #define test_run OcYfjhqAySoSyJlZ
+     #define test_sing yWnrzMngIDnaFCLX
+     #define test_singCallBackBlock FPjfTbwpGQG_UjDQ
+     #define test_runTime IlWLxAqbawbhacSs
+     #endif
+     #endif
+     */
+    
+    if (![fileContent containsString:@"MJCodeObfuscation_h"]) {
+        NSLog(@"注意：请勿乱更改文件名称!，处理信息已经失败了。");
+        return nil;
+    }
+    if (!debug) {
+        return fileContent;
+    }
+    NSRange headRange = [fileContent rangeOfString:@"#ifndef MJCodeObfuscation_h\n#define MJCodeObfuscation_h"];
+    NSString *headString = [fileContent substringWithRange:headRange];
+    NSMutableString *mutible = [NSMutableString stringWithString:fileContent];
+    [mutible deleteCharactersInRange:headRange];
+    NSRange footRange = [mutible rangeOfString:@"#endif"];
+    NSString *footString = [mutible substringWithRange:footRange];
+    [mutible deleteCharactersInRange:footRange];
+    fileContent = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@\n%@", headString, @"#ifdef DEBUG", @"#else", mutible, @"#endif", footString];
+    return fileContent;
+}
+
+
+
 @end

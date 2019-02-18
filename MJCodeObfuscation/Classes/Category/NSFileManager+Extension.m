@@ -91,4 +91,44 @@
     }
     return filepath;
 }
+
+/** 检查某个路径是否存在 */
++ (BOOL)mj_pathExists:(NSString *)path{
+    if (path.length == 0) return NO;
+    __block NSString *filepath = path;
+    NSFileManager *mgr = [NSFileManager defaultManager];
+    return [mgr fileExistsAtPath:filepath];
+}
+
+/** 检查删除指定路径文件 */
++ (BOOL)mj_deletePathExists:(NSString *)path{
+    if (path.length == 0) return YES;
+    
+    __block NSString *filepath = path;
+    NSFileManager *mgr = [NSFileManager defaultManager];
+    if ([mgr fileExistsAtPath:filepath]) {
+        if ([mgr isDeletableFileAtPath:filepath]) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+/** 新增路径文件 */
++ (NSString *)mj_addPathExists:(NSString *)path{
+    if (path.length == 0) return nil;
+    
+    __block NSString *filepath = path;
+    NSFileManager *mgr = [NSFileManager defaultManager];
+    if ([mgr fileExistsAtPath:filepath]) {
+        return filepath;
+    }
+    
+    if ([mgr createFileAtPath:filepath contents:nil attributes:nil]) {
+        return filepath;
+    }
+    
+    return nil;
+}
+
 @end
