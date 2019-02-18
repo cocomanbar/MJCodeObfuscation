@@ -1,10 +1,9 @@
+## fork新增
+- 1、保存删除原记录文件重新写入原文件目录，不会新增子版本文件。
+- 2、新增Debug/Release混淆环境切换，方便开发阶段可用，DEBUG可追溯到源头。
+
 # MJCodeObfuscation
 > 一个用于代码混淆和字符串加密的Mac小Demo
-
-## 一个用于代码混淆和字符串加密的Mac小Demo
-> 1、保存删除原记录文件重新写入原文件目录，不会新增子版本文件。
-> 2、新增Debug/Release混淆环境切换，方便开发阶段可用，DEBUG可追溯到源头。
-
 
 - 主要是利用`libclang`解析扫描源代码的语法树，搜索出所有的类名、方法名、字符串
 - 语法树解析的核心代码是：`MJCodeObfuscation/Classes/Tool/MJClangTool.m`，比较简单，不复杂
