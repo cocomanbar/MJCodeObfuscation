@@ -140,9 +140,10 @@
 }
 
 + (void)obfuscateAtDir:(NSString *)dir
-                    prefixes:(NSArray *)prefixes
-                    progress:(void (^)(NSString *))progress
-                  completion:(void (^)(NSString *))completion
+             openDebug:(BOOL)debug
+              prefixes:(NSArray *)prefixes
+              progress:(void (^)(NSString *detail))progress
+            completion:(void (^)(NSString *fileContent))completion
 {
     if (dir.length == 0 || !completion) return;
     
@@ -162,17 +163,25 @@
     NSMutableString *fileContent = [NSMutableString string];
     [fileContent appendString:@"#ifndef MJCodeObfuscation_h\n"];
     [fileContent appendString:@"#define MJCodeObfuscation_h\n"];
+    [fileContent appendString:@"\n"];
+    if (debug) {
+        [fileContent appendString:@"#ifdef DEBUG\n"];
+        [fileContent appendString:@"#else\n"];
+        [fileContent appendString:@"\n"];
+    }
     NSMutableArray *obfuscations = [NSMutableArray array];
     for (NSString *token in set) {
         NSString *obfuscation = nil;
         while (!obfuscation || [obfuscations containsObject:obfuscation]) {
             obfuscation = [NSString mj_randomStringWithoutDigitalWithLength:16];
         }
-        
         [fileContent appendFormat:@"#define %@ %@\n", token, obfuscation];
     }
+    [fileContent appendString:@"\n"];
+    if (debug) {
+        [fileContent appendString:@"#endif\n"];
+    }
     [fileContent appendString:@"#endif"];
-    
     !progress ? : progress(@"混淆完毕!");
     completion(fileContent);
 }

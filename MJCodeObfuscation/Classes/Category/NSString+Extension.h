@@ -29,7 +29,4 @@
 /** 生成crc32 */
 - (NSString *)mj_crc32;
 
-/** 返回指定文件信息 */
-+ (NSString *)mj_returnFileContent:(NSString *)fileContent isDebug:(BOOL)debug;
-
 @end

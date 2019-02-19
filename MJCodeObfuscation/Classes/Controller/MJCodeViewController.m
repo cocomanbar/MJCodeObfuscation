@@ -100,7 +100,6 @@
             [NSFileManager mj_deletePathExists:self.destFilepath];
         }
         self.destFilepath = [NSFileManager mj_addPathExists:self.destFilepath];
-        fileContent = [NSString mj_returnFileContent:fileContent isDebug:self.isDEBUG];
         [fileContent writeToFile:self.destFilepath atomically:YES
                         encoding:NSUTF8StringEncoding error:nil];
         
@@ -117,6 +116,7 @@
     // 混淆
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         [MJObfuscationTool obfuscateAtDir:self.filepath
+                                openDebug:self.isDEBUG
                                  prefixes:prefixes
                                  progress:progress
                                completion:completion];

@@ -21,6 +21,7 @@
 
 /** 混淆dir下的所有类名、方法名 */
 + (void)obfuscateAtDir:(NSString *)dir
+             openDebug:(BOOL)debug
               prefixes:(NSArray *)prefixes
               progress:(void (^)(NSString *detail))progress
             completion:(void (^)(NSString *fileContent))completion;
