@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2487BCD23E2564AE9BA12DC4 /* Pods_MJCodeObfuscation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D10661D0FC9FA0BFB0158C /* Pods_MJCodeObfuscation.framework */; };
 		2D3716D6212802E200A5F250 /* MJStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3716D5212802E200A5F250 /* MJStringViewController.m */; };
 		2D3716E1212813CA00A5F250 /* MJTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3716E0212813CA00A5F250 /* MJTextView.m */; };
 		2D3716E32128165200A5F250 /* MJEncryptStringDataMUnit.tpl in Resources */ = {isa = PBXBuildFile; fileRef = 2D3716E22128165200A5F250 /* MJEncryptStringDataMUnit.tpl */; };
@@ -27,10 +28,24 @@
 		612E4D3A221ADDE40025C957 /* NSFileManager+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 612E4D38221ADDE40025C957 /* NSFileManager+Extension.m */; };
 		612E4D3D221ADE000025C957 /* MJCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 612E4D3C221ADE000025C957 /* MJCodeViewController.m */; };
 		612E4D3F221ADE6E0025C957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612E4D3E221ADE6E0025C957 /* Main.storyboard */; };
-		612E4D41221AE0690025C957 /* 12580.png in Resources */ = {isa = PBXBuildFile; fileRef = 612E4D40221AE0680025C957 /* 12580.png */; };
+		614194D62224225900DE8988 /* TestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 614194D52224225900DE8988 /* TestJson.json */; };
+		614194E92224365D00DE8988 /* NSColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 614194E52224365C00DE8988 /* NSColor+HexColor.m */; };
+		614194EA2224365D00DE8988 /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 614194E62224365D00DE8988 /* NSDictionary+JSON.m */; };
+		6152588622215C5000770AF4 /* xcodetheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 6152588422215C5000770AF4 /* xcodetheme.json */; };
+		6152588722215C5000770AF4 /* xcodetheme.css in Resources */ = {isa = PBXBuildFile; fileRef = 6152588522215C5000770AF4 /* xcodetheme.css */; };
+		6152589922215C7C00770AF4 /* HighlightingTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6152589822215C7C00770AF4 /* HighlightingTextStorage.m */; };
+		6152589D22215CAE00770AF4 /* JSONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6152589B22215CAE00770AF4 /* JSONViewController.m */; };
+		615258AF22215FFE00770AF4 /* Pods_JSONToModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615258AE22215FFE00770AF4 /* Pods_JSONToModel.framework */; };
+		615258BD2221661600770AF4 /* AFNetClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 615258B42221661600770AF4 /* AFNetClient.m */; };
+		615258BE2221661600770AF4 /* LineNumberRulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615258B52221661600770AF4 /* LineNumberRulerView.swift */; };
+		615258BF2221661600770AF4 /* cssjson.js in Resources */ = {isa = PBXBuildFile; fileRef = 615258B72221661600770AF4 /* cssjson.js */; };
+		615258C02221661600770AF4 /* objectivec.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 615258BB2221661600770AF4 /* objectivec.min.js */; };
+		615258C12221661600770AF4 /* highlight.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 615258BC2221661600770AF4 /* highlight.min.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07D10661D0FC9FA0BFB0158C /* Pods_MJCodeObfuscation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MJCodeObfuscation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		107306A62CDD64D8C67D6547 /* Pods-MJCodeObfuscation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJCodeObfuscation.release.xcconfig"; path = "Pods/Target Support Files/Pods-MJCodeObfuscation/Pods-MJCodeObfuscation.release.xcconfig"; sourceTree = "<group>"; };
 		2D3716D4212802E200A5F250 /* MJStringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJStringViewController.h; sourceTree = "<group>"; };
 		2D3716D5212802E200A5F250 /* MJStringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJStringViewController.m; sourceTree = "<group>"; };
 		2D3716DF212813CA00A5F250 /* MJTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJTextView.h; sourceTree = "<group>"; };
@@ -64,6 +79,7 @@
 		2DCF3D7321257FB000E32B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DCF3D7421257FB000E32B33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2DCF3D7621257FB000E32B33 /* MJCodeObfuscation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MJCodeObfuscation.entitlements; sourceTree = "<group>"; };
+		3810ED3E2F5617B914EA7DC0 /* Pods-MJCodeObfuscation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJCodeObfuscation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MJCodeObfuscation/Pods-MJCodeObfuscation.debug.xcconfig"; sourceTree = "<group>"; };
 		612E4D35221ADDE40025C957 /* NSFileManager+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Extension.h"; sourceTree = "<group>"; };
 		612E4D36221ADDE40025C957 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		612E4D37221ADDE40025C957 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
@@ -71,7 +87,25 @@
 		612E4D3B221ADE000025C957 /* MJCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJCodeViewController.h; sourceTree = "<group>"; };
 		612E4D3C221ADE000025C957 /* MJCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJCodeViewController.m; sourceTree = "<group>"; };
 		612E4D3E221ADE6E0025C957 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		612E4D40221AE0680025C957 /* 12580.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12580.png; sourceTree = "<group>"; };
+		614194D52224225900DE8988 /* TestJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestJson.json; sourceTree = "<group>"; };
+		614194E52224365C00DE8988 /* NSColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+HexColor.m"; sourceTree = "<group>"; };
+		614194E62224365D00DE8988 /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
+		614194E72224365D00DE8988 /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		614194E82224365D00DE8988 /* NSColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+HexColor.h"; sourceTree = "<group>"; };
+		6152588422215C5000770AF4 /* xcodetheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = xcodetheme.json; sourceTree = "<group>"; };
+		6152588522215C5000770AF4 /* xcodetheme.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = xcodetheme.css; sourceTree = "<group>"; };
+		6152589722215C7C00770AF4 /* HighlightingTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighlightingTextStorage.h; sourceTree = "<group>"; };
+		6152589822215C7C00770AF4 /* HighlightingTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighlightingTextStorage.m; sourceTree = "<group>"; };
+		6152589A22215CAE00770AF4 /* JSONViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONViewController.h; sourceTree = "<group>"; };
+		6152589B22215CAE00770AF4 /* JSONViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONViewController.m; sourceTree = "<group>"; };
+		615258AE22215FFE00770AF4 /* Pods_JSONToModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pods_JSONToModel.framework; sourceTree = "<group>"; };
+		615258B42221661600770AF4 /* AFNetClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetClient.m; sourceTree = "<group>"; };
+		615258B52221661600770AF4 /* LineNumberRulerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineNumberRulerView.swift; sourceTree = "<group>"; };
+		615258B62221661600770AF4 /* MJCodeObfuscation-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MJCodeObfuscation-Bridging-Header.h"; sourceTree = "<group>"; };
+		615258B72221661600770AF4 /* cssjson.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = cssjson.js; sourceTree = "<group>"; };
+		615258B82221661600770AF4 /* AFNetClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetClient.h; sourceTree = "<group>"; };
+		615258BB2221661600770AF4 /* objectivec.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = objectivec.min.js; sourceTree = "<group>"; };
+		615258BC2221661600770AF4 /* highlight.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = highlight.min.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +114,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D7B47972126C46D006D5755 /* libclang.dylib in Frameworks */,
+				615258AF22215FFE00770AF4 /* Pods_JSONToModel.framework in Frameworks */,
+				2487BCD23E2564AE9BA12DC4 /* Pods_MJCodeObfuscation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24AE033E0C53E43363DCC1B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3810ED3E2F5617B914EA7DC0 /* Pods-MJCodeObfuscation.debug.xcconfig */,
+				107306A62CDD64D8C67D6547 /* Pods-MJCodeObfuscation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2D3716D3212802BF00A5F250 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				2D7B47962126C46D006D5755 /* libclang.dylib */,
+				07D10661D0FC9FA0BFB0158C /* Pods_MJCodeObfuscation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,12 +208,12 @@
 		2D8FF87C2126FCF000950CF4 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				612E4D40221AE0680025C957 /* 12580.png */,
 				2DCF3D6E21257FB000E32B33 /* Assets.xcassets */,
 				2DCF3D7321257FB000E32B33 /* Info.plist */,
 				612E4D3E221ADE6E0025C957 /* Main.storyboard */,
 				2DCF3D7421257FB000E32B33 /* main.m */,
 				2DCF3D7621257FB000E32B33 /* MJCodeObfuscation.entitlements */,
+				614194D52224225900DE8988 /* TestJson.json */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -189,6 +235,7 @@
 				2DCF3D6721257FAF00E32B33 /* MJCodeObfuscation */,
 				2DCF3D6621257FAF00E32B33 /* Products */,
 				2D7B47952126C46D006D5755 /* Frameworks */,
+				24AE033E0C53E43363DCC1B8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +250,7 @@
 		2DCF3D6721257FAF00E32B33 /* MJCodeObfuscation */ = {
 			isa = PBXGroup;
 			children = (
+				6152587B22215C1200770AF4 /* JSONToModel */,
 				2D3716E42128169600A5F250 /* Template */,
 				2D8FF87B2126FCD600950CF4 /* Classes */,
 				2D8FF87C2126FCF000950CF4 /* Other */,
@@ -221,6 +269,71 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		614194DE22242A6C00DE8988 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				614194E72224365D00DE8988 /* NSDictionary+JSON.h */,
+				614194E62224365D00DE8988 /* NSDictionary+JSON.m */,
+				614194E82224365D00DE8988 /* NSColor+HexColor.h */,
+				614194E52224365C00DE8988 /* NSColor+HexColor.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		6152587B22215C1200770AF4 /* JSONToModel */ = {
+			isa = PBXGroup;
+			children = (
+				614194DE22242A6C00DE8988 /* Category */,
+				615258B32221661600770AF4 /* thirdLibs */,
+				615258AE22215FFE00770AF4 /* Pods_JSONToModel.framework */,
+				6152589A22215CAE00770AF4 /* JSONViewController.h */,
+				6152589B22215CAE00770AF4 /* JSONViewController.m */,
+				6152589722215C7C00770AF4 /* HighlightingTextStorage.h */,
+				6152589822215C7C00770AF4 /* HighlightingTextStorage.m */,
+				6152588322215C5000770AF4 /* Resouces */,
+			);
+			path = JSONToModel;
+			sourceTree = "<group>";
+		};
+		6152588322215C5000770AF4 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				6152588422215C5000770AF4 /* xcodetheme.json */,
+				6152588522215C5000770AF4 /* xcodetheme.css */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		615258B32221661600770AF4 /* thirdLibs */ = {
+			isa = PBXGroup;
+			children = (
+				615258B82221661600770AF4 /* AFNetClient.h */,
+				615258B42221661600770AF4 /* AFNetClient.m */,
+				615258B52221661600770AF4 /* LineNumberRulerView.swift */,
+				615258B62221661600770AF4 /* MJCodeObfuscation-Bridging-Header.h */,
+				615258B72221661600770AF4 /* cssjson.js */,
+				615258B92221661600770AF4 /* Highlighter */,
+			);
+			path = thirdLibs;
+			sourceTree = "<group>";
+		};
+		615258B92221661600770AF4 /* Highlighter */ = {
+			isa = PBXGroup;
+			children = (
+				615258BA2221661600770AF4 /* languages */,
+				615258BC2221661600770AF4 /* highlight.min.js */,
+			);
+			path = Highlighter;
+			sourceTree = "<group>";
+		};
+		615258BA2221661600770AF4 /* languages */ = {
+			isa = PBXGroup;
+			children = (
+				615258BB2221661600770AF4 /* objectivec.min.js */,
+			);
+			path = languages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,9 +341,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DCF3D7921257FB000E32B33 /* Build configuration list for PBXNativeTarget "MJCodeObfuscation" */;
 			buildPhases = (
+				9EEAB34CF9F5DECA9C747FA6 /* [CP] Check Pods Manifest.lock */,
 				2DCF3D6121257FAF00E32B33 /* Sources */,
 				2DCF3D6221257FAF00E32B33 /* Frameworks */,
 				2DCF3D6321257FAF00E32B33 /* Resources */,
+				1003FAEA4D822B625A0477C4 /* [CP] Embed Pods Frameworks */,
+				5A1BF2D8C1B287DECCEA2033 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,15 +403,80 @@
 				2D3716FE2129750500A5F250 /* MJEncryptStringDataM.tpl in Resources */,
 				2D3716E8212816D600A5F250 /* MJEncryptStringH.tpl in Resources */,
 				612E4D3F221ADE6E0025C957 /* Main.storyboard in Resources */,
-				612E4D41221AE0690025C957 /* 12580.png in Resources */,
+				6152588622215C5000770AF4 /* xcodetheme.json in Resources */,
+				6152588722215C5000770AF4 /* xcodetheme.css in Resources */,
+				615258BF2221661600770AF4 /* cssjson.js in Resources */,
 				2D3716F92128553E00A5F250 /* MJEncryptStringDataHUnit.tpl in Resources */,
+				615258C02221661600770AF4 /* objectivec.min.js in Resources */,
 				2D3716E9212816D600A5F250 /* MJEncryptStringM.tpl in Resources */,
+				614194D62224225900DE8988 /* TestJson.json in Resources */,
+				615258C12221661600770AF4 /* highlight.min.js in Resources */,
 				2D3716E32128165200A5F250 /* MJEncryptStringDataMUnit.tpl in Resources */,
 				2DCF3D6F21257FB000E32B33 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1003FAEA4D822B625A0477C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJCodeObfuscation/Pods-MJCodeObfuscation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A1BF2D8C1B287DECCEA2033 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJCodeObfuscation/Pods-MJCodeObfuscation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EEAB34CF9F5DECA9C747FA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2DCF3D6121257FAF00E32B33 /* Sources */ = {
@@ -305,12 +486,18 @@
 				2D7B47942126C44F006D5755 /* MJClangTool.m in Sources */,
 				2D3716E1212813CA00A5F250 /* MJTextView.m in Sources */,
 				2D3716EE2128294A00A5F250 /* MJDividerView.m in Sources */,
+				6152589922215C7C00770AF4 /* HighlightingTextStorage.m in Sources */,
+				615258BD2221661600770AF4 /* AFNetClient.m in Sources */,
 				2D7B47892126BE5F006D5755 /* MJTextField.m in Sources */,
 				612E4D39221ADDE40025C957 /* NSString+Extension.m in Sources */,
 				2DCF3D7521257FB000E32B33 /* main.m in Sources */,
+				614194EA2224365D00DE8988 /* NSDictionary+JSON.m in Sources */,
 				2D7B479A2126D3C3006D5755 /* MJObfuscationTool.m in Sources */,
 				612E4D3A221ADDE40025C957 /* NSFileManager+Extension.m in Sources */,
 				2DCF3D6A21257FAF00E32B33 /* AppDelegate.m in Sources */,
+				615258BE2221661600770AF4 /* LineNumberRulerView.swift in Sources */,
+				614194E92224365D00DE8988 /* NSColor+HexColor.m in Sources */,
+				6152589D22215CAE00770AF4 /* JSONViewController.m in Sources */,
 				2D3716D6212802E200A5F250 /* MJStringViewController.m in Sources */,
 				612E4D3D221ADE000025C957 /* MJCodeViewController.m in Sources */,
 			);
@@ -430,12 +617,17 @@
 		};
 		2DCF3D7A21257FB000E32B33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3810ED3E2F5617B914EA7DC0 /* Pods-MJCodeObfuscation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MJCodeObfuscation/Other/MJCodeObfuscation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MJCodeObfuscation/JSONToModel",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/MJCodeObfuscation/**";
 				INFOPLIST_FILE = MJCodeObfuscation/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -446,17 +638,24 @@
 				LIBRARY_SEARCH_PATHS = "$(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mj.MJCodeObfuscation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cocomanber/Desktop/MJCodeObfuscation/MJCodeObfuscation/JSONToModel/thirdLibs/MJCodeObfuscation-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		2DCF3D7B21257FB000E32B33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107306A62CDD64D8C67D6547 /* Pods-MJCodeObfuscation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MJCodeObfuscation/Other/MJCodeObfuscation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MJCodeObfuscation/JSONToModel",
+				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/MJCodeObfuscation/**";
 				INFOPLIST_FILE = MJCodeObfuscation/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -467,6 +666,8 @@
 				LIBRARY_SEARCH_PATHS = "$(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mj.MJCodeObfuscation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cocomanber/Desktop/MJCodeObfuscation/MJCodeObfuscation/JSONToModel/thirdLibs/MJCodeObfuscation-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
